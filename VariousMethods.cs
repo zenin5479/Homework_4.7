@@ -237,7 +237,6 @@ namespace Homework_4._7
          File.WriteAllLines(filePath, stringArray);
       }
 
-      // Обновлен метод + 
       public static string[] VivodArrayString(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
