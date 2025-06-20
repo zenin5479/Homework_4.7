@@ -13,7 +13,26 @@ namespace Homework_4._7
    {
       static void Main(string[] args)
       {
-         Console.WriteLine("Hello World!");
+         // Переводит (,) в (.)
+         //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
+
+         int n = VariousMethods.SizeRow();
+         int m = VariousMethods.SizeColumn();
+         double[,] arrayDouble = VariousMethods.VvodArray(n, m);
+         Console.WriteLine();
+         double[,] arraySearch = VariousMethods.InputArray(arrayDouble, n, m);
+         Console.WriteLine();
+         double[] arrayMax = VariousMethods.FindMax(arraySearch);
+         Console.WriteLine();
+         string[] stringArray = VariousMethods.VivodStringArray(arrayMax);
+         Console.WriteLine();
+         VariousMethods.FileWriteString(stringArray);
+         Console.WriteLine();
+         string[] arrayString = VariousMethods.VivodArrayString(arrayMax);
+         Console.WriteLine();
+         VariousMethods.FileWriteArray(arrayString);
+
+         Console.ReadKey();
       }
    }
 }
