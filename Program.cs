@@ -30,7 +30,7 @@ namespace Homework_4._7
          Console.WriteLine();
          //string[] arrayString = VariousMethods.VivodArrayString(arrayMax);
          //Console.WriteLine();
-         //VariousMethods.FileWriteArray(arrayString);
+     
 
          Console.ReadKey();
       }
