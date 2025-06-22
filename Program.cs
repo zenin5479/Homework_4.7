@@ -29,8 +29,6 @@ namespace Homework_4._7
          VariousMethods.FileWriteString(stringArray);
          Console.WriteLine();
          //string[] arrayString = VariousMethods.VivodArrayString(arrayMax);
-         //Console.WriteLine();
-     
 
          Console.ReadKey();
       }
