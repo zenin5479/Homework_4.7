@@ -11,7 +11,7 @@ namespace Homework_4._7
          int n;
          do
          {
-            Console.WriteLine("Введите количество элементов массива {0}", nameArray);
+            Console.WriteLine("Введите количество строк массива {0}", nameArray);
             int.TryParse(Console.ReadLine(), out n);
             //n = Convert.ToInt32(Console.ReadLine());
             if (n <= 0 || n > 20)
@@ -22,6 +22,24 @@ namespace Homework_4._7
 
          return n;
       }
+
+      public static int SizeColumn(string nameArray)
+      {
+         int m;
+         do
+         {
+            Console.WriteLine("Введите количество столбцов массива А");
+            int.TryParse(Console.ReadLine(), out m);
+            //m = Convert.ToInt32(Console.ReadLine());
+            if (m <= 0 || m > 20)
+            {
+               Console.WriteLine("Введено не верное значение");
+            }
+         } while (m <= 0 || m > 20);
+
+         return m;
+      }
+
 
       public static int SizeRow()
       {
@@ -162,7 +180,7 @@ namespace Homework_4._7
 
          return arrayDouble;
       }
-      
+
       public static double[,] InputArray(double[,] inputArray, int n, int m)
       {
          Console.WriteLine("Двумерный числовой массив для проведения поиска");
