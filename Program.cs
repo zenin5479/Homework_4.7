@@ -16,11 +16,15 @@ namespace Homework_4._7
          // Переводит (,) в (.)
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
-         int n = VariousMethods.SizeRow();
-         int m = VariousMethods.SizeColumn();
-         double[,] arrayDouble = VariousMethods.VvodArray(n, m);
+         string nameOne = "A";
+         string nameTwo = "B";
+         string nameThree = "C";
+
+         int rowOne = VariousMethods.SizeRow(nameOne);
+         int columnOne = VariousMethods.SizeColumn();
+         double[,] arrayDouble = VariousMethods.VvodArray(rowOne, columnOne);
          Console.WriteLine();
-         double[,] arraySearch = VariousMethods.InputArray(arrayDouble, n, m);
+         double[,] arraySearch = VariousMethods.InputArray(arrayDouble, rowOne, columnOne);
          Console.WriteLine();
          double[] arrayMax = VariousMethods.FindMax(arraySearch);
          Console.WriteLine();
