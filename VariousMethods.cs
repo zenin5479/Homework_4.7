@@ -29,7 +29,6 @@ namespace Homework_4._7
          do
          {
             Console.WriteLine("Введите количество столбцов массива {0}", nameArray);
-            Console.WriteLine("Введите количество столбцов массива А");
             int.TryParse(Console.ReadLine(), out m);
             //m = Convert.ToInt32(Console.ReadLine());
             if (m <= 0 || m > 20)
