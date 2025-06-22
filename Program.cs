@@ -25,11 +25,8 @@ namespace Homework_4._7
 
          //int rowTwo = VariousMethods.SizeRow(nameTwo);
          //int columnTwo = VariousMethods.SizeColumn(nameTwo);
-
-         int rowTwo = VariousMethods.SizeRow(nameTwo);
-         int columnTwo = VariousMethods.SizeColumn(nameTwo);
-
-
+         int rowThree = VariousMethods.SizeRow(nameTwo);
+         int columnThree = VariousMethods.SizeColumn(nameTwo);
          //double[,] arrayDouble = VariousMethods.VvodArray(rowOne, columnOne);
          //Console.WriteLine();
          //double[,] arraySearch = VariousMethods.InputArray(arrayDouble, rowOne, columnOne);
