@@ -40,7 +40,6 @@ namespace Homework_4._7
          return m;
       }
 
-
       public static int SizeRow()
       {
          int n;
