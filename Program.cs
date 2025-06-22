@@ -21,17 +21,25 @@ namespace Homework_4._7
          string nameThree = "C";
 
          int rowOne = VariousMethods.SizeRow(nameOne);
-         int columnOne = VariousMethods.SizeColumn();
-         double[,] arrayDouble = VariousMethods.VvodArray(rowOne, columnOne);
-         Console.WriteLine();
-         double[,] arraySearch = VariousMethods.InputArray(arrayDouble, rowOne, columnOne);
-         Console.WriteLine();
-         double[] arrayMax = VariousMethods.FindMax(arraySearch);
-         Console.WriteLine();
-         string[] stringArray = VariousMethods.VivodStringArray(arrayMax);
-         Console.WriteLine();
-         VariousMethods.FileWriteString(stringArray);
-         Console.WriteLine();
+         int columnOne = VariousMethods.SizeColumn(nameOne);
+
+         //int rowTwo = VariousMethods.SizeRow(nameTwo);
+         //int columnTwo = VariousMethods.SizeColumn(nameTwo);
+
+         int rowTwo = VariousMethods.SizeRow(nameTwo);
+         int columnTwo = VariousMethods.SizeColumn(nameTwo);
+
+
+         //double[,] arrayDouble = VariousMethods.VvodArray(rowOne, columnOne);
+         //Console.WriteLine();
+         //double[,] arraySearch = VariousMethods.InputArray(arrayDouble, rowOne, columnOne);
+         //Console.WriteLine();
+         //double[] arrayMax = VariousMethods.FindMax(arraySearch);
+         //Console.WriteLine();
+         //string[] stringArray = VariousMethods.VivodStringArray(arrayMax);
+         //Console.WriteLine();
+         //VariousMethods.FileWriteString(stringArray);
+         //Console.WriteLine();
 
          Console.ReadKey();
       }
