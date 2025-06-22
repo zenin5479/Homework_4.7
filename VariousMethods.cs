@@ -40,25 +40,6 @@ namespace Homework_4._7
          return m;
       }
 
-      public static double[,] InputArray(double[,] inputArray, int n, int m)
-      {
-         Console.WriteLine("Двумерный числовой массив для проведения поиска");
-         double[,] outputArray = new double[n, m];
-         for (int i = 0; i < n; i++)
-         {
-            for (int j = 0; j < m; j++)
-            {
-               outputArray[i, j] = inputArray[i, j];
-               //Console.Write("{0:f2} ", outputArray[i, j]);
-               //Console.Write("{0:f} ", outputArray[i, j]);
-               Console.Write("{0} ", outputArray[i, j]);
-            }
-            Console.WriteLine();
-         }
-
-         return outputArray;
-      }
-
       public static double[,] VvodArray(int n, int m)
       {
          string filePath = AppContext.BaseDirectory + "a.txt";
@@ -163,6 +144,25 @@ namespace Homework_4._7
          }
 
          return arrayDouble;
+      }
+      
+      public static double[,] InputArray(double[,] inputArray, int n, int m)
+      {
+         Console.WriteLine("Двумерный числовой массив для проведения поиска");
+         double[,] outputArray = new double[n, m];
+         for (int i = 0; i < n; i++)
+         {
+            for (int j = 0; j < m; j++)
+            {
+               outputArray[i, j] = inputArray[i, j];
+               //Console.Write("{0:f2} ", outputArray[i, j]);
+               //Console.Write("{0:f} ", outputArray[i, j]);
+               Console.Write("{0} ", outputArray[i, j]);
+            }
+            Console.WriteLine();
+         }
+
+         return outputArray;
       }
 
       public static double[] FindMax(double[,] inputArray)
