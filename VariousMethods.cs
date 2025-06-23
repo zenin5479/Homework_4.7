@@ -172,7 +172,7 @@ namespace Homework_4._7
          }
 
          Console.WriteLine("Массив максимальных значений строк двухмерного массива вещественных чисел {0}", nameOne);
-        int indexMax = 0;
+         int indexMax = 0;
          while (indexMax < arrayMax.Length)
          {
             Console.Write("{0} ", arrayMax[indexMax]);
