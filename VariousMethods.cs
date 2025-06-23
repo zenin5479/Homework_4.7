@@ -145,6 +145,49 @@ namespace Homework_4._7
          return arrayDouble;
       }
 
+      public static double[] FindMax(double[,] inputArray, string nameOne)
+      {
+         // Поиск максимального элемента строки (без флагов bool)
+         double[] arrayMax = new double[inputArray.GetLength(0)];
+         int rowOut = 0;
+         int columnOut = 0;
+         while (rowOut < inputArray.GetLength(0))
+         {
+            // Cчитаем, что максимум - это первый элемент строки
+            double maxOut = inputArray[rowOut, 0];
+            while (columnOut < inputArray.GetLength(1))
+            {
+               if (maxOut < inputArray[rowOut, columnOut])
+               {
+                  maxOut = inputArray[rowOut, columnOut];
+               }
+
+               columnOut++;
+            }
+
+            arrayMax[rowOut] = maxOut;
+            //Console.WriteLine("Максимум в строке {0} равен: {1}", rowOut, maxOut);
+            columnOut = 0;
+            rowOut++;
+         }
+
+         Console.WriteLine("Массив максимальных значений строк двухмерного массива вещественных чисел {0}", nameOne);
+
+         Console.WriteLine("Двухмерный массив вещественных чисел {0}", nameArray);
+
+         Console.WriteLine("Максимум в массиве {0} равен: {1}", nameArray, max);
+         //Console.WriteLine("Максимум в массиве {0} равен: {1:f2}", nameArray, max);
+
+         int indexMax = 0;
+         while (indexMax < arrayMax.Length)
+         {
+            Console.Write("{0} ", arrayMax[indexMax]);
+            indexMax++;
+         }
+
+         Console.WriteLine();
+         return arrayMax;
+      }
 
       public static int SizeRow()
       {
