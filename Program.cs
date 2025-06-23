@@ -82,10 +82,10 @@ namespace Homework_4._7
          else
          {
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne);
-            double maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
-            double[] replacingOne = VariousMethods.ReplacingMax(searchOne, maxOne);
-            string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
-            VariousMethods.FileAppendString(arrayOne, pathFour);
+            //double maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
+            //double[] replacingOne = VariousMethods.ReplacingMax(searchOne, maxOne);
+            //string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
+            //VariousMethods.FileAppendString(arrayOne, pathFour);
          }
 
          //double[,] arrayDouble = VariousMethods.VvodArray(rowOne, columnOne);
