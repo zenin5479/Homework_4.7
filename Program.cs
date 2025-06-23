@@ -84,16 +84,14 @@ namespace Homework_4._7
          {
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
             double[] maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
-            
-            //string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
-            //VariousMethods.FileAppendString(arrayOne, pathFour);
+            string[] stringArray = VariousMethods.VivodStringArray(maxOne);
+            Console.WriteLine();
+            //VariousMethods.FileWriteString(stringArray);
+            //Console.WriteLine();
          }
 
-         
-         //string[] stringArray = VariousMethods.VivodStringArray(arrayMax);
-         //Console.WriteLine();
-         //VariousMethods.FileWriteString(stringArray);
-         //Console.WriteLine();
+
+
 
          Console.ReadKey();
       }
