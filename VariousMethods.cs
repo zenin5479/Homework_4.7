@@ -42,11 +42,10 @@ namespace Homework_4._7
 
       public static double[,] VvodArray(string path, string nameArray)
       {
-         string filePath = AppContext.BaseDirectory + "a.txt";
          // Двумерный массив вещественных чисел
          double[,] arrayDouble = { };
          // Чтение файла за одну операцию
-         string[] allLines = File.ReadAllLines(filePath);
+         string[] allLines = File.ReadAllLines(path);
          if (allLines == null)
          {
             Console.WriteLine("Ошибка при открытии файла для чтения");
@@ -54,6 +53,8 @@ namespace Homework_4._7
          else
          {
             Console.WriteLine("Исходный массив строк");
+            Console.WriteLine("Исходный массив строк {0}", nameArray);
+
             int indexLines = 0;
             while (indexLines < allLines.Length)
             {
