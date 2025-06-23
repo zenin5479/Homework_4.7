@@ -89,12 +89,7 @@ namespace Homework_4._7
             //VariousMethods.FileAppendString(arrayOne, pathFour);
          }
 
-         //double[,] arrayDouble = VariousMethods.VvodArray(rowOne, columnOne);
-         //Console.WriteLine();
-         //double[,] arraySearch = VariousMethods.InputArray(arrayDouble, rowOne, columnOne);
-         //Console.WriteLine();
-         //double[] arrayMax = VariousMethods.FindMax(arraySearch);
-         //Console.WriteLine();
+         
          //string[] stringArray = VariousMethods.VivodStringArray(arrayMax);
          //Console.WriteLine();
          //VariousMethods.FileWriteString(stringArray);
