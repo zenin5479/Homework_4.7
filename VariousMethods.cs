@@ -173,9 +173,7 @@ namespace Homework_4._7
 
          Console.WriteLine("Массив максимальных значений строк двухмерного массива вещественных чисел {0}", nameOne);
          Console.WriteLine("Двухмерный массив вещественных чисел {0}", nameArray);
-         Console.WriteLine("Максимум в массиве {0} равен: {1}", nameArray, max);
-         //Console.WriteLine("Максимум в массиве {0} равен: {1:f2}", nameArray, max);
-
+        
          int indexMax = 0;
          while (indexMax < arrayMax.Length)
          {
