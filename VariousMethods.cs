@@ -52,9 +52,7 @@ namespace Homework_4._7
          }
          else
          {
-            Console.WriteLine("Исходный массив строк");
             Console.WriteLine("Исходный массив строк {0}", nameArray);
-
             int indexLines = 0;
             while (indexLines < allLines.Length)
             {
@@ -95,6 +93,7 @@ namespace Homework_4._7
             }
 
             // Разделение строки на подстроки по пробелу и конвертация подстрок в double
+            Console.WriteLine("Двухмерный массив вещественных чисел {0}", nameArray);
             Console.WriteLine("Двухмерный числовой массив");
             StringBuilder stringModified = new StringBuilder();
             arrayDouble = new double[allLines.Length, sizeArray.Length];
