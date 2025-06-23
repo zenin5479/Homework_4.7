@@ -88,9 +88,6 @@ namespace Homework_4._7
             VariousMethods.FileWriteString(stringArray);
          }
 
-
-
-
          Console.ReadKey();
       }
    }
