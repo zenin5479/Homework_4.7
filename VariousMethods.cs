@@ -147,7 +147,7 @@ namespace Homework_4._7
 
       public static double[,] InputArray(double[,] inputArray, int n, int m, string nameArray)
       {
-         Console.WriteLine("Двумерный числовой массив для проведения поиска");
+
          Console.WriteLine("Двумерный массив вещественных чисел {0} для проведения поиска", nameArray);
 
          double[,] outputArray = new double[n, m];
