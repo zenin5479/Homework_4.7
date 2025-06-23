@@ -84,7 +84,7 @@ namespace Homework_4._7
          {
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
             double[] maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
-            //double[] replacingOne = VariousMethods.ReplacingMax(searchOne, maxOne);
+            
             //string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
             //VariousMethods.FileAppendString(arrayOne, pathFour);
          }
