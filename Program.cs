@@ -38,7 +38,78 @@ namespace Homework_4._7
          {
             Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
          }
+         string pathFour = Path.GetFullPath("finish.txt");
+         if (!File.Exists(pathFour))
+         {
+            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+            File.Create(pathFour);
+         }
+         else
+         {
+            Console.WriteLine("Файл существует. Очищаем");
+            // Очищаем содержимое файла
+            // Вариант 1
+            File.Create(pathFour).Close();
+            // Вариант 2
+            //File.WriteAllLines(pathFour, new string[0]);
+            //File.WriteAllLines(pathFour, Array.Empty<string>());
+            // Вариант 3
+            //File.WriteAllText(pathFour, string.Empty);
+            // Вариант 4
+            //File.WriteAllBytes(pathFour, new byte[0]);
+            //File.WriteAllBytes(pathFour, Array.Empty<byte>());
+            // Вариант 5
+            //FileStream fileStream = new FileStream(pathFour, FileMode.Truncate);
+            //fileStream.Close();
+            // Вариант 6
+            //FileStream fileStream = new FileStream(pathFour, FileMode.Open);
+            //fileStream.SetLength(0);
+            //fileStream.Close();
+         }
 
+         double[] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
+         if (sourceOne.Length == 0)
+         {
+            Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
+         }
+         else
+         {
+            double[] searchOne = VariousMethods.InputArray(sourceOne, elementsOne, nameOne);
+            double maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
+            double[] replacingOne = VariousMethods.ReplacingMax(searchOne, maxOne);
+            string[] arrayOne = VariousMethods.VivodStringArray(replacingOne);
+            VariousMethods.FileAppendString(arrayOne, pathFour);
+         }
+
+         double[] sourceTwo = VariousMethods.VvodArray(pathTwo, nameTwo);
+         if (sourceTwo.Length == 0)
+         {
+            Console.WriteLine("Исходный строковый массив {0} пуст", nameTwo);
+         }
+         else
+         {
+            double[] searchTwo = VariousMethods.InputArray(sourceTwo, elementsTwo, nameTwo);
+            double maxTwo = VariousMethods.FindMaxArray(searchTwo, nameTwo);
+            double[] replacingTwo = VariousMethods.ReplacingMax(searchTwo, maxTwo);
+            string[] arrayTwo = VariousMethods.VivodStringArray(replacingTwo);
+            VariousMethods.FileAppendString(arrayTwo, pathFour);
+         }
+
+         double[] sourceThree = VariousMethods.VvodArray(pathThree, nameThree);
+         if (sourceThree.Length == 0)
+         {
+            Console.WriteLine("Исходный строковый массив {0} пуст", nameThree);
+         }
+         else
+         {
+            double[] searchThree = VariousMethods.InputArray(sourceThree, elementsThree, nameThree);
+            double maxThree = VariousMethods.FindMaxArray(searchThree, nameThree);
+            double[] replacingThree = VariousMethods.ReplacingMax(searchThree, maxThree);
+            string[] arrayThree = VariousMethods.VivodStringArray(replacingThree);
+            VariousMethods.FileAppendString(arrayThree, pathFour);
+         }
+
+         Console.ReadKey();
 
 
 
