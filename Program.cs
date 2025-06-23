@@ -21,6 +21,13 @@ namespace Homework_4._7
          string nameTwo = "B";
          string nameThree = "C";
 
+         int rowOne = VariousMethods.SizeRow(nameOne);
+         int columnOne = VariousMethods.SizeColumn(nameOne);
+         int rowTwo = VariousMethods.SizeRow(nameTwo);
+         int columnTwo = VariousMethods.SizeColumn(nameTwo);
+         int rowThree = VariousMethods.SizeRow(nameThree);
+         int columnThree = VariousMethods.SizeColumn(nameThree);
+
          string pathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(pathOne))
          {
@@ -81,45 +88,6 @@ namespace Homework_4._7
             VariousMethods.FileAppendString(arrayOne, pathFour);
          }
 
-         double[] sourceTwo = VariousMethods.VvodArray(pathTwo, nameTwo);
-         if (sourceTwo.Length == 0)
-         {
-            Console.WriteLine("Исходный строковый массив {0} пуст", nameTwo);
-         }
-         else
-         {
-            double[] searchTwo = VariousMethods.InputArray(sourceTwo, elementsTwo, nameTwo);
-            double maxTwo = VariousMethods.FindMaxArray(searchTwo, nameTwo);
-            double[] replacingTwo = VariousMethods.ReplacingMax(searchTwo, maxTwo);
-            string[] arrayTwo = VariousMethods.VivodStringArray(replacingTwo);
-            VariousMethods.FileAppendString(arrayTwo, pathFour);
-         }
-
-         double[] sourceThree = VariousMethods.VvodArray(pathThree, nameThree);
-         if (sourceThree.Length == 0)
-         {
-            Console.WriteLine("Исходный строковый массив {0} пуст", nameThree);
-         }
-         else
-         {
-            double[] searchThree = VariousMethods.InputArray(sourceThree, elementsThree, nameThree);
-            double maxThree = VariousMethods.FindMaxArray(searchThree, nameThree);
-            double[] replacingThree = VariousMethods.ReplacingMax(searchThree, maxThree);
-            string[] arrayThree = VariousMethods.VivodStringArray(replacingThree);
-            VariousMethods.FileAppendString(arrayThree, pathFour);
-         }
-
-         Console.ReadKey();
-
-
-
-
-         int rowOne = VariousMethods.SizeRow(nameOne);
-         int columnOne = VariousMethods.SizeColumn(nameOne);
-         int rowTwo = VariousMethods.SizeRow(nameTwo);
-         int columnTwo = VariousMethods.SizeColumn(nameTwo);
-         int rowThree = VariousMethods.SizeRow(nameThree);
-         int columnThree = VariousMethods.SizeColumn(nameThree);
          //double[,] arrayDouble = VariousMethods.VvodArray(rowOne, columnOne);
          //Console.WriteLine();
          //double[,] arraySearch = VariousMethods.InputArray(arrayDouble, rowOne, columnOne);
