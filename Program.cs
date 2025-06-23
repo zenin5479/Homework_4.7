@@ -74,7 +74,7 @@ namespace Homework_4._7
             //fileStream.Close();
          }
 
-         double[] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
+         double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
          if (sourceOne.Length == 0)
          {
             Console.WriteLine("Исходный строковый массив {0} пуст", nameOne);
