@@ -149,7 +149,6 @@ namespace Homework_4._7
       {
 
          Console.WriteLine("Двумерный массив вещественных чисел {0} для проведения поиска", nameArray);
-
          double[,] outputArray = new double[n, m];
          for (int i = 0; i < n; i++)
          {
