@@ -76,7 +76,7 @@ namespace Homework_4._7
 
          // Добавить проверку глубины массива на 0
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
-         if (sourceOne.GetLength(0) == 0)
+         if (sourceOne.GetLength(0) == 0 && sourceOne.GetLength(0) == 0)
          {
             Console.WriteLine("Исходный массив строк {0} пуст", nameOne);
          }
