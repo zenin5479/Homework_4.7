@@ -85,7 +85,7 @@ namespace Homework_4._7
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
 
             bool fl = false;
-            fl = find_positiv(searchOne, fl );
+            fl = find_positiv(searchOne, fl);
 
             //double[] maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
             //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
@@ -95,9 +95,28 @@ namespace Homework_4._7
          Console.ReadKey();
       }
 
-      private static bool find_positiv(double[,] searchOne, bool fl)
+      private static bool find_positiv(double[,] search, bool fl)
       {
-         throw new NotImplementedException();
+         int i = 0;
+         while (i < search.GetLength(0) && fl)
+         {
+            int j = 0;
+
+            while (j < search.GetLength(1) && fl)
+            {
+               if (search[i, j] > 0)
+               {
+                  fl = false;
+               }
+               else
+               {
+                  j++;
+               }
+            }
+            i++;
+         }
+
+         return fl;
       }
 
 
