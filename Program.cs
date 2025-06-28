@@ -96,15 +96,10 @@ namespace Homework_4._7
          Console.ReadKey();
       }
 
-      private static bool FindPositiv(double[,] searchOne)
+      private static bool FindPositiv(double[,] search)
       {
-         
-      }
+         bool fl = true;
 
-      private static bool FindPositiv(double[,] search, bool fl)
-      {
-          bool fl = true;
-         
          int i = 0;
          while (i < search.GetLength(0) && fl)
          {
@@ -124,6 +119,11 @@ namespace Homework_4._7
          }
 
          return fl;
+      }
+
+      private static bool FindPositiv(double[,] search, bool fl)
+      {
+
       }
 
 
