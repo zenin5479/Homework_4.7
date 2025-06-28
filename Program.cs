@@ -74,7 +74,7 @@ namespace Homework_4._7
             //fileStream.Close();
          }
 
-         // Добавить проверку глубины массива на 0
+         // Перенести проверку на ноль в метод VvodArray
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
          if (sourceOne.GetLength(0) == 0 && sourceOne.GetLength(1) == 0)
          {
