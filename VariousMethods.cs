@@ -165,6 +165,31 @@ namespace Homework_4._7
          return outputArray;
       }
 
+      private static bool FindPositiv(double[,] search)
+      {
+         bool fl = true;
+         int i = 0;
+         while (i < search.GetLength(0) && fl)
+         {
+            int j = 0;
+            while (j < search.GetLength(1) && fl)
+            {
+               if (search[i, j] > 0)
+               {
+                  fl = false;
+               }
+               else
+               {
+                  j++;
+               }
+            }
+
+            i++;
+         }
+
+         return fl;
+      }
+
       public static double[] FindMaxArray(double[,] inputArray, string nameOne)
       {
          // Поиск максимального элемента строки (без флагов bool)
