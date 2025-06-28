@@ -84,7 +84,7 @@ namespace Homework_4._7
          {
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
             
-            bool fl = FindPositiv(searchOne);
+            bool fl = VariousMethods.SearchingPositiv(searchOne);
             Console.WriteLine(fl);
 
             //double[] maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);

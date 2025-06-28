@@ -165,7 +165,7 @@ namespace Homework_4._7
          return outputArray;
       }
 
-      private static bool FindPositiv(double[,] search)
+      public static bool SearchingPositiv(double[,] search)
       {
          bool fl = true;
          int i = 0;
