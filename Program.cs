@@ -121,12 +121,6 @@ namespace Homework_4._7
          return fl;
       }
 
-      private static bool FindPositiv(double[,] search, bool fl)
-      {
-
-      }
-
-
       //bool find_positiv(double** x, int n, int m, bool& fl)
       //{
       //   int i = -1;
