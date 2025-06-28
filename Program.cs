@@ -118,30 +118,5 @@ namespace Homework_4._7
 
          return fl;
       }
-
-      //bool find_positiv(double** x, int n, int m, bool& fl)
-      //{
-      //   int i = -1;
-      //   while (i < n and fl)
-
-      //   {
-      //      i++;
-      //      int j = 0;
-      //      while (j < m and fl)
-
-      //      {
-      //         if (x[i][j] > 0)
-      //         {
-      //            fl = false;
-      //         }
-      //         else
-      //         {
-      //            j++;
-      //         }
-      //      }
-      //   }
-
-      //   return fl;
-      //}
    }
 }
