@@ -98,7 +98,6 @@ namespace Homework_4._7
       private static bool FindPositiv(double[,] search)
       {
          bool fl = true;
-
          int i = 0;
          while (i < search.GetLength(0) && fl)
          {
@@ -114,6 +113,7 @@ namespace Homework_4._7
                   j++;
                }
             }
+
             i++;
          }
 
