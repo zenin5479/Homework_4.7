@@ -83,7 +83,6 @@ namespace Homework_4._7
          else
          {
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
-            
             bool fl = VariousMethods.SearchingPositiv(searchOne);
             Console.WriteLine(fl);
 
