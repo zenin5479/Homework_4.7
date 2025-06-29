@@ -79,7 +79,7 @@ namespace Homework_4._7
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
          if (sourceOne.GetLength(0) == 0)
          {
-            Console.WriteLine("Исходный массив строк {0} пуст", nameOne);
+            Console.WriteLine("Ошибка содержимого файла для чтения. Файл пуст");
          }
          else
          {
