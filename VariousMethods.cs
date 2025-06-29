@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.IO.Pipes;
 using System.Text;
 
 namespace Homework_4._7
@@ -46,9 +47,9 @@ namespace Homework_4._7
          double[,] arrayDouble = { };
          // Чтение файла за одну операцию
          string[] allLines = File.ReadAllLines(path);
-         if (allLines == null)
+         if (allLines == null || allLines.Length == 0)
          {
-            Console.WriteLine("Ошибка при открытии файла для чтения");
+            Console.WriteLine("Исходный массив строк {0} пуст", nameArray);
          }
          else
          {
