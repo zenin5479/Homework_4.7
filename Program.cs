@@ -88,7 +88,6 @@ namespace Homework_4._7
             double minOne = VariousMethods.SearchingMinPositiv(searchOne);
             Console.WriteLine(minOne);
 
-            //double[] maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
             //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
             //VariousMethods.FileWriteString(stringArray);
          }
