@@ -93,5 +93,29 @@ namespace Homework_4._7
 
          Console.ReadKey();
       }
+
+      double find_min_positive(double** x, int n, int m)
+      {
+         double min = x[0][0];
+         for (int i = 0; i < n; i++)
+         {
+            for (int j = 0; j < m; j++)
+            {
+               if (min < 0 && x[i][j] > min && j < m)
+               {
+                  min = x[i][j];
+               }
+               else
+               {
+                  if (x[i][j] > 0 && x[i][j] < min)
+                  {
+                     min = x[i][j];
+                  }
+               }
+            }
+         }
+
+         return min;
+      }
    }
 }
