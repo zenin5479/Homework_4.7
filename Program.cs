@@ -77,7 +77,7 @@ namespace Homework_4._7
          // Перенести проверку на ноль в метод VvodArray !!!
          double minOne;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
-         if (sourceOne.GetLength(0) == 0 && sourceOne.GetLength(1) == 0)
+         if (sourceOne.GetLength(0) == 0)
          {
             Console.WriteLine("Исходный массив строк {0} пуст", nameOne);
          }
