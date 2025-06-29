@@ -18,8 +18,8 @@ namespace Homework_4._7
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
          string nameOne = "A";
-         string nameTwo = "B";
-         string nameThree = "C";
+         //string nameTwo = "B";
+         //string nameThree = "C";
 
          int rowOne = VariousMethods.SizeRow(nameOne);
          int columnOne = VariousMethods.SizeColumn(nameOne);
