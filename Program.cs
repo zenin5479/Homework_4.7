@@ -95,9 +95,6 @@ namespace Homework_4._7
          Console.ReadKey();
       }
 
-      static double SearchingMinPositiv(double[,] search)
-      {
-        
-      }
+      
    }
 }
