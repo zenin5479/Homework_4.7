@@ -103,16 +103,6 @@ namespace Homework_4._7
             int j = 0;
             while (j < search.GetLength(1))
             {
-               if (search[i, j] > 0)
-               {
-                  fl = false;
-               }
-               else
-               {
-                  j++;
-               }
-
-
                if (min < 0 && search[i, j] > min && j < search.GetLength(1))
                {
                   min = search[i, j];
@@ -124,6 +114,8 @@ namespace Homework_4._7
                      min = search[i, j];
                   }
                }
+
+               j++;
 
 
 
