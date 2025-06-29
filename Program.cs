@@ -74,7 +74,7 @@ namespace Homework_4._7
             //fileStream.Close();
          }
 
-         // Перенести проверку на ноль в метод VvodArray
+         // Перенести проверку на ноль в метод VvodArray !!!
          double minOne;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
          if (sourceOne.GetLength(0) == 0 && sourceOne.GetLength(1) == 0)
@@ -87,7 +87,6 @@ namespace Homework_4._7
             bool fl = VariousMethods.SearchingPositiv(searchOne);
             if (!fl)
             {
-               Console.WriteLine(fl);
                minOne = VariousMethods.SearchingMinPositiv(searchOne);
                Console.WriteLine(minOne);
             }
