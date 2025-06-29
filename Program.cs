@@ -85,15 +85,16 @@ namespace Homework_4._7
          {
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
             bool fl = VariousMethods.SearchingPositiv(searchOne);
-            if (fl)
+            if (!fl)
             {
-               Console.WriteLine("В двумерном массиве вещественных чисел {0} для проведения поиска нет искомых положительных элементов", nameOne);
-
+               Console.WriteLine(fl);
+               minOne = VariousMethods.SearchingMinPositiv(searchOne);
+               Console.WriteLine(minOne);
             }
-
-            Console.WriteLine(fl);
-            minOne = VariousMethods.SearchingMinPositiv(searchOne);
-            Console.WriteLine(minOne);
+            else
+            {
+               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameOne);
+            }
          }
 
          //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
