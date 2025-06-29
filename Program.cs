@@ -29,31 +29,31 @@ namespace Homework_4._7
          //int columnThree = VariousMethods.SizeColumn(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
-         if (!File.Exists(pathOne))
-         {
-            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
-         }
+         //if (!File.Exists(pathOne))
+         //{
+         //   Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+         //}
 
          string pathTwo = Path.GetFullPath("b.txt");
-         if (!File.Exists(pathTwo))
-         {
-            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
-         }
+         //if (!File.Exists(pathTwo))
+         //{
+         //   Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+         //}
 
          string pathThree = Path.GetFullPath("c.txt");
-         if (!File.Exists(pathThree))
-         {
-            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
-         }
+         //if (!File.Exists(pathThree))
+         //{
+         //   Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+         //}
          string pathFour = Path.GetFullPath("finish.txt");
          if (!File.Exists(pathFour))
          {
-            Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
+            Console.WriteLine("Файл не существует");
             File.Create(pathFour);
          }
          else
          {
-            Console.WriteLine("Файл существует. Очищаем");
+            //Console.WriteLine("Файл существует. Очищаем");
             // Очищаем содержимое файла
             // Вариант 1
             File.Create(pathFour).Close();
@@ -74,7 +74,7 @@ namespace Homework_4._7
             //fileStream.Close();
          }
 
-         double minOne;
+         double minOne = -1.0;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
          if (sourceOne.GetLength(0) == 0)
          {
@@ -95,11 +95,20 @@ namespace Homework_4._7
             }
          }
 
+         if (minOne != -1.0)
+         {
+         }
+         else
+         {
+
+         }
+
          //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
          //VariousMethods.FileWriteString(stringArray);
 
          Console.ReadKey();
       }
+
 
       double CalculatingValue(double minOne, double minTwo, double minThree)
       {

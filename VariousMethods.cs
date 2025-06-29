@@ -48,7 +48,7 @@ namespace Homework_4._7
          string[] allLines = File.ReadAllLines(path);
          if (allLines == null || allLines.Length == 0)
          {
-            Console.WriteLine("Исходный массив строк {0} пуст", nameArray);
+            Console.WriteLine("Ошибка содержимого файла для чтения");
          }
          else
          {
