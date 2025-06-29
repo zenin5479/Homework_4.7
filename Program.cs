@@ -121,23 +121,23 @@ namespace Homework_4._7
 
 
          double min = search[0, 0];
-         for (int i = 0; i < n; i++)
-         {
-            for (int j = 0; j < m; j++)
-            {
-               if (min < 0 && x[i][j] > min && j < m)
-               {
-                  min = x[i][j];
-               }
-               else
-               {
-                  if (x[i][j] > 0 && x[i][j] < min)
-                  {
-                     min = x[i][j];
-                  }
-               }
-            }
-         }
+         //for (int i = 0; i < n; i++)
+         //{
+         //   for (int j = 0; j < m; j++)
+         //   {
+         //      if (min < 0 && x[i][j] > min && j < m)
+         //      {
+         //         min = x[i][j];
+         //      }
+         //      else
+         //      {
+         //         if (x[i][j] > 0 && x[i][j] < min)
+         //         {
+         //            min = x[i][j];
+         //         }
+         //      }
+         //   }
+         //}
 
          return min;
       }
