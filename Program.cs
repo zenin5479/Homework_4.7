@@ -94,7 +94,5 @@ namespace Homework_4._7
 
          Console.ReadKey();
       }
-
-      
    }
 }
