@@ -190,6 +190,33 @@ namespace Homework_4._7
          return fl;
       }
 
+      static double SearchingMinPositiv(double[,] search)
+      {
+         double min = search[0, 0];
+         int i = 0;
+         while (i < search.GetLength(0))
+         {
+            int j = 0;
+            while (j < search.GetLength(1))
+            {
+               if (min < 0 && search[i, j] > min)
+               {
+                  min = search[i, j];
+               }
+
+               if (search[i, j] > 0 && search[i, j] < min)
+               {
+                  min = search[i, j];
+               }
+
+               j++;
+            }
+
+            i++;
+         }
+
+         return min;
+      }
 
       public static double[] FindMaxArray(double[,] inputArray, string nameOne)
       {
