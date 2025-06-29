@@ -133,11 +133,6 @@ namespace Homework_4._7
             i++;
          }
 
-
-
-
-
-
          //for (int i = 0; i < n; i++)
          //{
          //   for (int j = 0; j < m; j++)
