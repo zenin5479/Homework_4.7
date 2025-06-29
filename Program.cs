@@ -75,6 +75,7 @@ namespace Homework_4._7
          }
 
          // Перенести проверку на ноль в метод VvodArray
+         double minOne;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
          if (sourceOne.GetLength(0) == 0 && sourceOne.GetLength(1) == 0)
          {
@@ -85,12 +86,12 @@ namespace Homework_4._7
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
             bool fl = VariousMethods.SearchingPositiv(searchOne);
             Console.WriteLine(fl);
-            double minOne = VariousMethods.SearchingMinPositiv(searchOne);
+            minOne = VariousMethods.SearchingMinPositiv(searchOne);
             Console.WriteLine(minOne);
-
-            //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
-            //VariousMethods.FileWriteString(stringArray);
          }
+
+         //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
+         //VariousMethods.FileWriteString(stringArray);
 
          Console.ReadKey();
       }
