@@ -97,16 +97,7 @@ namespace Homework_4._7
 
       static double SearchingMinPositiv(double[,] search)
       {
-         double min = search[0, 0];
-         int i = 0;
-         while (i < search.GetLength(0))
-         {
-            
-
-            i++;
-         }
-
-         return min;
+        
       }
    }
 }
