@@ -96,31 +96,48 @@ namespace Homework_4._7
 
       double find_min_positive(double[,] search)
       {
-
-         //int i = 0;
-         //while (i < search.GetLength(0) && fl)
-         //{
-         //   int j = 0;
-         //   while (j < search.GetLength(1) && fl)
-         //   {
-         //      if (search[i, j] > 0)
-         //      {
-         //         fl = false;
-         //      }
-         //      else
-         //      {
-         //         j++;
-         //      }
-         //   }
-
-         //   i++;
-         //}
-
-
-
-
-
          double min = search[0, 0];
+         int i = 0;
+         while (i < search.GetLength(0))
+         {
+            int j = 0;
+            while (j < search.GetLength(1))
+            {
+               if (search[i, j] > 0)
+               {
+                  fl = false;
+               }
+               else
+               {
+                  j++;
+               }
+
+
+               if (min < 0 && search[i, j] > min && j < search.GetLength(1))
+               {
+                  min = search[i, j];
+               }
+               else
+               {
+                  if (search[i, j] > 0 && search[i, j] < min)
+                  {
+                     min = search[i, j];
+                  }
+               }
+
+
+
+
+            }
+
+            i++;
+         }
+
+
+
+
+
+
          //for (int i = 0; i < n; i++)
          //{
          //   for (int j = 0; j < m; j++)
