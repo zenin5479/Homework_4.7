@@ -85,7 +85,7 @@ namespace Homework_4._7
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
             bool fl = VariousMethods.SearchingPositiv(searchOne);
             Console.WriteLine(fl);
-            double minOne = find_min_positive(searchOne);
+            double minOne = SearchingMinPositiv(searchOne);
             Console.WriteLine(minOne);
 
             //double[] maxOne = VariousMethods.FindMaxArray(searchOne, nameOne);
@@ -96,7 +96,7 @@ namespace Homework_4._7
          Console.ReadKey();
       }
 
-      static double find_min_positive(double[,] search)
+      static double SearchingMinPositiv(double[,] search)
       {
          double min = search[0, 0];
          int i = 0;
