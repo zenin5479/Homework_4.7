@@ -74,7 +74,6 @@ namespace Homework_4._7
             //fileStream.Close();
          }
 
-         // Перенести проверку на ноль в метод VvodArray !!!
          double minOne;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
          if (sourceOne.GetLength(0) == 0)
