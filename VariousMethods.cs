@@ -190,7 +190,7 @@ namespace Homework_4._7
          return fl;
       }
 
-      static double SearchingMinPositiv(double[,] search)
+      public static double SearchingMinPositiv(double[,] search)
       {
          double min = search[0, 0];
          int i = 0;
