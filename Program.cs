@@ -23,10 +23,10 @@ namespace Homework_4._7
 
          int rowOne = VariousMethods.SizeRow(nameOne);
          int columnOne = VariousMethods.SizeColumn(nameOne);
-         int rowTwo = VariousMethods.SizeRow(nameTwo);
-         int columnTwo = VariousMethods.SizeColumn(nameTwo);
-         int rowThree = VariousMethods.SizeRow(nameThree);
-         int columnThree = VariousMethods.SizeColumn(nameThree);
+         //int rowTwo = VariousMethods.SizeRow(nameTwo);
+         //int columnTwo = VariousMethods.SizeColumn(nameTwo);
+         //int rowThree = VariousMethods.SizeRow(nameThree);
+         //int columnThree = VariousMethods.SizeColumn(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          if (!File.Exists(pathOne))
