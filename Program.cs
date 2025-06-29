@@ -95,10 +95,14 @@ namespace Homework_4._7
             }
          }
 
-         if (minOne != -1.0)
+         // Сравниваем значения double используя метод CompareTo(Double) 
+         if (minOne.CompareTo(-1.0) == 0)
          {
+
          }
-         else
+
+         // Сравниваем значения double используя метод Equals(Double)
+         if (minOne.Equals(-1.0))
          {
 
          }
