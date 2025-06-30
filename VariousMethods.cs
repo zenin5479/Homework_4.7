@@ -52,12 +52,10 @@ namespace Homework_4._7
          }
          else
          {
-            //Console.WriteLine("Исходный массив строк {0}", nameArray);
             int indexLines = 0;
             while (indexLines < allLines.Length)
             {
                allLines[indexLines] = allLines[indexLines];
-               //Console.WriteLine(allLines[indexLines]);
                indexLines++;
             }
 
@@ -86,14 +84,12 @@ namespace Homework_4._7
                }
 
                sizeArray[countRow] = countСolumn;
-               //Console.WriteLine("В строке {0} количество столбцов {1}", countRow, countСolumn);
                countСolumn = 0;
                countRow++;
                countSymbol = 0;
             }
 
             // Разделение строки на подстроки по пробелу и конвертация подстрок в double
-            //Console.WriteLine("Исходный двухмерный массив вещественных чисел {0}", nameArray);
             StringBuilder stringModified = new StringBuilder();
             arrayDouble = new double[allLines.Length, sizeArray.Length];
             char spaceCharacter = ' ';
@@ -115,7 +111,6 @@ namespace Homework_4._7
                      {
                         string subLine = stringModified.ToString();
                         arrayDouble[row, column] = Convert.ToDouble(subLine);
-                        //Console.Write(arrayDouble[row, column] + " ");
                         stringModified.Clear();
                         column++;
                      }
@@ -124,7 +119,6 @@ namespace Homework_4._7
                      {
                         string subLine = stringModified.ToString();
                         arrayDouble[row, column] = Convert.ToDouble(subLine);
-                        //Console.Write(arrayDouble[row, column]);
                         stringModified.Clear();
                         column++;
                      }
@@ -135,7 +129,6 @@ namespace Homework_4._7
                   countCharacter = 0;
                }
 
-               //Console.WriteLine();
                column = 0;
                row++;
             }
