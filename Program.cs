@@ -25,8 +25,8 @@ namespace Homework_4._7
          int columnOne = VariousMethods.SizeColumn(nameOne);
          int rowTwo = VariousMethods.SizeRow(nameTwo);
          int columnTwo = VariousMethods.SizeColumn(nameTwo);
-         int rowThree = VariousMethods.SizeRow(nameThree);
-         int columnThree = VariousMethods.SizeColumn(nameThree);
+         //int rowThree = VariousMethods.SizeRow(nameThree);
+         //int columnThree = VariousMethods.SizeColumn(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          string pathTwo = Path.GetFullPath("b.txt");
