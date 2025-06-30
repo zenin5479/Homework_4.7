@@ -70,11 +70,6 @@ namespace Homework_4._7
 
          }
 
-         // Сравниваем значения double используя метод Equals(Double)
-         if (minOne.Equals(-1.0))
-         {
-
-         }
 
          //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
          //VariousMethods.FileWriteString(stringArray);
