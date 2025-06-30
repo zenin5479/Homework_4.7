@@ -182,7 +182,7 @@ namespace Homework_4._7
          return fl;
       }
 
-      public static double SearchingMinPositiv(double[,] search)
+      public static double SearchingMinPositiv(double[,] search, string nameArray)
       {
          double min = search[0, 0];
          int i = 0;
@@ -207,9 +207,9 @@ namespace Homework_4._7
             i++;
          }
 
-         Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива: {0}", min);
-         //Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива: {0:f2}", min);
-         //Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива: {0:f}", min);
+         Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива {0}: {1}", nameArray, min);
+         Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива {0}: {1:f2}", nameArray, min);
+         Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива {0}: {1:f}", nameArray, min);
          return min;
       }
 

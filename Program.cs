@@ -59,8 +59,8 @@ namespace Homework_4._7
             }
             else
             {
-               minOne = VariousMethods.SearchingMinPositiv(searchOne);
-               Console.WriteLine(minOne);
+               minOne = VariousMethods.SearchingMinPositiv(searchOne, nameOne);
+               //Console.WriteLine(minOne);
             }
          }
 
@@ -80,8 +80,8 @@ namespace Homework_4._7
             }
             else
             {
-               minTwo = VariousMethods.SearchingMinPositiv(searchTwo);
-               Console.WriteLine(minTwo);
+               minTwo = VariousMethods.SearchingMinPositiv(searchTwo, nameTwo);
+               //Console.WriteLine(minTwo);
             }
          }
 
@@ -101,8 +101,8 @@ namespace Homework_4._7
             }
             else
             {
-               minThree = VariousMethods.SearchingMinPositiv(searchThree);
-               Console.WriteLine(minThree);
+               minThree = VariousMethods.SearchingMinPositiv(searchThree, nameThree);
+               //Console.WriteLine(minThree);
             }
          }
 
