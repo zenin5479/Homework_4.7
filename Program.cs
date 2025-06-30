@@ -44,7 +44,7 @@ namespace Homework_4._7
          }
 
          double minOne = -1.0;
-         double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
+         double[,] sourceOne = VariousMethods.VvodArray(pathOne);
          if (sourceOne.GetLength(0) == 0)
          {
             Console.WriteLine("Файл пуст");
@@ -65,7 +65,7 @@ namespace Homework_4._7
          }
 
          double minTwo = -1.0;
-         double[,] sourceTwo = VariousMethods.VvodArray(pathTwo, nameTwo);
+         double[,] sourceTwo = VariousMethods.VvodArray(pathTwo);
          if (sourceTwo.GetLength(0) == 0)
          {
             Console.WriteLine("Файл пуст");

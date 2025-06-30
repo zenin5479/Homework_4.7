@@ -40,7 +40,7 @@ namespace Homework_4._7
          return m;
       }
 
-      public static double[,] VvodArray(string path, string nameArray)
+      public static double[,] VvodArray(string path)
       {
          // Двумерный массив вещественных чисел
          double[,] arrayDouble = { };
