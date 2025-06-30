@@ -64,26 +64,26 @@ namespace Homework_4._7
             }
          }
 
-         //double minTwo = -1.0;
-         //double[,] sourceTwo = VariousMethods.VvodArray(pathTwo);
-         //if (sourceTwo.GetLength(0) == 0)
-         //{
-         //   Console.WriteLine("Файл пуст");
-         //}
-         //else
-         //{
-         //   double[,] searchTwo = VariousMethods.InputArray(sourceTwo, rowTwo, columnTwo, nameTwo);
-         //   bool flTwo = VariousMethods.SearchingPositiv(searchTwo);
-         //   if (flTwo)
-         //   {
-         //      Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameTwo);
-         //   }
-         //   else
-         //   {
-         //      minTwo = VariousMethods.SearchingMinPositiv(searchTwo);
-         //      Console.WriteLine(minTwo);
-         //   }
-         //}
+         double minTwo = -1.0;
+         double[,] sourceTwo = VariousMethods.VvodArray(pathTwo);
+         if (sourceTwo.GetLength(0) == 0)
+         {
+            Console.WriteLine("Файл пуст");
+         }
+         else
+         {
+            double[,] searchTwo = VariousMethods.InputArray(sourceTwo, rowTwo, columnTwo, nameTwo);
+            bool flTwo = VariousMethods.SearchingPositiv(searchTwo);
+            if (flTwo)
+            {
+               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameTwo);
+            }
+            else
+            {
+               minTwo = VariousMethods.SearchingMinPositiv(searchTwo);
+               Console.WriteLine(minTwo);
+            }
+         }
 
          double minThree = -1.0;
          double[,] sourceThree = VariousMethods.VvodArray(pathThree);
@@ -118,7 +118,7 @@ namespace Homework_4._7
          Console.ReadKey();
       }
 
-      double CalculatingValue(double minOne, double minTwo, double minThree)
+      public double CalculatingValue(double minOne, double minTwo, double minThree)
       {
          return minOne * minTwo - minThree;
       }
