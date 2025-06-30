@@ -43,7 +43,7 @@ namespace Homework_4._7
             File.Create(pathFour).Close();
          }
 
-         double minOne = -1.0;
+         double minOne = -1.0; // 
          double[,] sourceOne = VariousMethods.VvodArray(pathOne);
          if (sourceOne.GetLength(0) == 0)
          {
@@ -64,7 +64,7 @@ namespace Homework_4._7
             }
          }
 
-         double minTwo = -1.0;
+         double minTwo = -1.0; //
          double[,] sourceTwo = VariousMethods.VvodArray(pathTwo);
          if (sourceTwo.GetLength(0) == 0)
          {
@@ -85,7 +85,7 @@ namespace Homework_4._7
             }
          }
 
-         double minThree = -1.0;
+         double minThree = -1.0; //
          double[,] sourceThree = VariousMethods.VvodArray(pathThree);
          if (sourceThree.GetLength(0) == 0)
          {
