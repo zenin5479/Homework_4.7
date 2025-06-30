@@ -18,15 +18,15 @@ namespace Homework_4._7
          //System.Threading.Thread.CurrentThread.CurrentCulture = new CultureInfo("en-US");
 
          string nameOne = "A";
-         //string nameTwo = "B";
-         //string nameThree = "C";
+         string nameTwo = "B";
+         string nameThree = "C";
 
          int rowOne = VariousMethods.SizeRow(nameOne);
          int columnOne = VariousMethods.SizeColumn(nameOne);
-         //int rowTwo = VariousMethods.SizeRow(nameTwo);
-         //int columnTwo = VariousMethods.SizeColumn(nameTwo);
-         //int rowThree = VariousMethods.SizeRow(nameThree);
-         //int columnThree = VariousMethods.SizeColumn(nameThree);
+         int rowTwo = VariousMethods.SizeRow(nameTwo);
+         int columnTwo = VariousMethods.SizeColumn(nameTwo);
+         int rowThree = VariousMethods.SizeRow(nameThree);
+         int columnThree = VariousMethods.SizeColumn(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          string pathTwo = Path.GetFullPath("b.txt");
@@ -43,29 +43,52 @@ namespace Homework_4._7
             File.Create(pathFour).Close();
          }
 
-         double minOne = -1.0;
-         double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
-         if (sourceOne.GetLength(0) == 0)
+         //double minOne = -1.0;
+         //double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
+         //if (sourceOne.GetLength(0) == 0)
+         //{
+         //   Console.WriteLine("Файл пуст");
+         //}
+         //else
+         //{
+         //   double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
+         //   bool fl = VariousMethods.SearchingPositiv(searchOne);
+         //   if (!fl)
+         //   {
+         //      minOne = VariousMethods.SearchingMinPositiv(searchOne);
+         //      Console.WriteLine(minOne);
+         //   }
+         //   else
+         //   {
+         //      Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameOne);
+         //   }
+         //}
+
+         double minTwo = -1.0;
+         double[,] sourceTwo = VariousMethods.VvodArray(pathTwo, nameTwo);
+         if (sourceTwo.GetLength(0) == 0)
          {
             Console.WriteLine("Файл пуст");
          }
          else
          {
-            double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
-            bool fl = VariousMethods.SearchingPositiv(searchOne);
-            if (!fl)
+            double[,] searchTwo = VariousMethods.InputArray(sourceTwo, rowTwo, columnTwo, nameTwo);
+            bool flTwo = VariousMethods.SearchingPositiv(searchTwo);
+            if (!flTwo)
             {
-               minOne = VariousMethods.SearchingMinPositiv(searchOne);
-               Console.WriteLine(minOne);
+               minTwo = VariousMethods.SearchingMinPositiv(searchTwo);
+               Console.WriteLine(minTwo);
             }
             else
             {
-               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameOne);
+               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameTwo);
             }
          }
 
+
+
          // Сравниваем значения double используя метод CompareTo(Double) 
-         if (minOne.CompareTo(-1.0) == 0)
+         if (minTwo.CompareTo(-1.0) == 0)
          {
 
          }
