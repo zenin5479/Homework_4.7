@@ -57,7 +57,7 @@ namespace Homework_4._7
             while (indexLines < allLines.Length)
             {
                allLines[indexLines] = allLines[indexLines];
-               Console.WriteLine(allLines[indexLines]);
+               //Console.WriteLine(allLines[indexLines]);
                indexLines++;
             }
 
