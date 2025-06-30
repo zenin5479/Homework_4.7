@@ -30,12 +30,7 @@ namespace Homework_4._7
 
          string pathOne = Path.GetFullPath("a.txt");
          string pathTwo = Path.GetFullPath("b.txt");
-
          string pathThree = Path.GetFullPath("c.txt");
-         //if (!File.Exists(pathThree))
-         //{
-         //   Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
-         //}
          string pathFour = Path.GetFullPath("finish.txt");
          if (!File.Exists(pathFour))
          {
