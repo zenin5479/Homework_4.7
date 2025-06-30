@@ -53,14 +53,14 @@ namespace Homework_4._7
          {
             double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
             bool flOne = VariousMethods.SearchingPositiv(searchOne);
-            if (!flOne)
+            if (flOne)
             {
-               minOne = VariousMethods.SearchingMinPositiv(searchOne);
-               Console.WriteLine(minOne);
+               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameOne);
             }
             else
             {
-               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameOne);
+               minOne = VariousMethods.SearchingMinPositiv(searchOne);
+               Console.WriteLine(minOne);
             }
          }
 
@@ -74,14 +74,14 @@ namespace Homework_4._7
          {
             double[,] searchTwo = VariousMethods.InputArray(sourceTwo, rowTwo, columnTwo, nameTwo);
             bool flTwo = VariousMethods.SearchingPositiv(searchTwo);
-            if (!flTwo)
+            if (flTwo)
             {
-               minTwo = VariousMethods.SearchingMinPositiv(searchTwo);
-               Console.WriteLine(minTwo);
+               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameTwo);
             }
             else
             {
-               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameTwo);
+               minTwo = VariousMethods.SearchingMinPositiv(searchTwo);
+               Console.WriteLine(minTwo);
             }
          }
 
