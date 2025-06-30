@@ -108,14 +108,8 @@ namespace Homework_4._7
 
          double result = CalculatingValue(minOne, minTwo, minThree);
          Console.WriteLine("Результат: {0}", result);
-         Console.WriteLine("Результат: {0:f2}", result);
-         Console.WriteLine("Результат: {0:f}", result);
-
-         // Сравниваем значения double используя метод CompareTo(Double) 
-         //if (minOne.CompareTo(-1.0) == 0)
-         //{
-
-         //}
+         //Console.WriteLine("Результат: {0:f2}", result);
+         //Console.WriteLine("Результат: {0:f}", result);
 
          //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
          //VariousMethods.FileWriteString(stringArray);
