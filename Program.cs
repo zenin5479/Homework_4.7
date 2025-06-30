@@ -25,8 +25,8 @@ namespace Homework_4._7
          int columnOne = VariousMethods.SizeColumn(nameOne);
          int rowTwo = VariousMethods.SizeRow(nameTwo);
          int columnTwo = VariousMethods.SizeColumn(nameTwo);
-         //int rowThree = VariousMethods.SizeRow(nameThree);
-         //int columnThree = VariousMethods.SizeColumn(nameThree);
+         int rowThree = VariousMethods.SizeRow(nameThree);
+         int columnThree = VariousMethods.SizeColumn(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
          string pathTwo = Path.GetFullPath("b.txt");
@@ -85,27 +85,26 @@ namespace Homework_4._7
          //   }
          //}
 
-         double minTwo = -1.0;
-         double[,] sourceTwo = VariousMethods.VvodArray(pathTwo);
-         if (sourceTwo.GetLength(0) == 0)
+         double minThree = -1.0;
+         double[,] sourceThree = VariousMethods.VvodArray(pathThree);
+         if (sourceThree.GetLength(0) == 0)
          {
             Console.WriteLine("Файл пуст");
          }
          else
          {
-            double[,] searchTwo = VariousMethods.InputArray(sourceTwo, rowTwo, columnTwo, nameTwo);
-            bool flTwo = VariousMethods.SearchingPositiv(searchTwo);
-            if (flTwo)
+            double[,] searchThree = VariousMethods.InputArray(sourceThree, rowThree, columnThree, nameThree);
+            bool flThree = VariousMethods.SearchingPositiv(searchThree);
+            if (flThree)
             {
-               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameTwo);
+               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameThree);
             }
             else
             {
-               minTwo = VariousMethods.SearchingMinPositiv(searchTwo);
-               Console.WriteLine(minTwo);
+               minThree = VariousMethods.SearchingMinPositiv(searchThree);
+               Console.WriteLine(minThree);
             }
          }
-
 
          // Сравниваем значения double используя метод CompareTo(Double) 
          //if (minOne.CompareTo(-1.0) == 0)
