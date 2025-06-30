@@ -29,11 +29,6 @@ namespace Homework_4._7
          //int columnThree = VariousMethods.SizeColumn(nameThree);
 
          string pathOne = Path.GetFullPath("a.txt");
-         //if (!File.Exists(pathOne))
-         //{
-         //   Console.WriteLine("Ошибка при открытии файла для чтения. Файл не существует");
-         //}
-
          string pathTwo = Path.GetFullPath("b.txt");
          //if (!File.Exists(pathTwo))
          //{
