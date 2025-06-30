@@ -11,7 +11,7 @@ namespace Homework_4._7
          int n;
          do
          {
-            Console.WriteLine("Введите количество строк массива {0}", nameArray);
+            Console.WriteLine("Введите количество строк массива {0}:", nameArray);
             int.TryParse(Console.ReadLine(), out n);
             //n = Convert.ToInt32(Console.ReadLine());
             if (n <= 0 || n > 20)
@@ -28,7 +28,7 @@ namespace Homework_4._7
          int m;
          do
          {
-            Console.WriteLine("Введите количество столбцов массива {0}", nameArray);
+            Console.WriteLine("Введите количество столбцов массива {0}:", nameArray);
             int.TryParse(Console.ReadLine(), out m);
             //m = Convert.ToInt32(Console.ReadLine());
             if (m <= 0 || m > 20)
@@ -139,18 +139,18 @@ namespace Homework_4._7
 
       public static double[,] InputArray(double[,] inputArray, int n, int m, string nameArray)
       {
-
-         Console.WriteLine("Двумерный массив вещественных чисел {0} для проведения поиска", nameArray);
+         Console.WriteLine("Двумерный массив вещественных чисел {0}:", nameArray);
          double[,] outputArray = new double[n, m];
          for (int i = 0; i < n; i++)
          {
             for (int j = 0; j < m; j++)
             {
                outputArray[i, j] = inputArray[i, j];
+               Console.Write("{0} ", outputArray[i, j]);
                //Console.Write("{0:f2} ", outputArray[i, j]);
                //Console.Write("{0:f} ", outputArray[i, j]);
-               Console.Write("{0} ", outputArray[i, j]);
             }
+
             Console.WriteLine();
          }
 
@@ -208,8 +208,8 @@ namespace Homework_4._7
          }
 
          Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива {0}: {1}", nameArray, min);
-         Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива {0}: {1:f2}", nameArray, min);
-         Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива {0}: {1:f}", nameArray, min);
+         //Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива {0}: {1:f2}", nameArray, min);
+         //Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива {0}: {1:f}", nameArray, min);
          return min;
       }
 
