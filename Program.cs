@@ -107,7 +107,9 @@ namespace Homework_4._7
          }
 
          double result = CalculatingValue(minOne, minTwo, minThree);
-         Console.WriteLine(result);
+         Console.WriteLine("Результат: {0}", result);
+         Console.WriteLine("Результат: {0:f2}", result);
+         Console.WriteLine("Результат: {0:f}", result);
 
          // Сравниваем значения double используя метод CompareTo(Double) 
          //if (minOne.CompareTo(-1.0) == 0)
