@@ -52,7 +52,7 @@ namespace Homework_4._7
          }
          else
          {
-            Console.WriteLine("Исходный массив строк {0}", nameArray);
+            //Console.WriteLine("Исходный массив строк {0}", nameArray);
             int indexLines = 0;
             while (indexLines < allLines.Length)
             {
@@ -93,7 +93,7 @@ namespace Homework_4._7
             }
 
             // Разделение строки на подстроки по пробелу и конвертация подстрок в double
-            Console.WriteLine("Исходный двухмерный массив вещественных чисел {0}", nameArray);
+            //Console.WriteLine("Исходный двухмерный массив вещественных чисел {0}", nameArray);
             StringBuilder stringModified = new StringBuilder();
             arrayDouble = new double[allLines.Length, sizeArray.Length];
             char spaceCharacter = ' ';
@@ -115,7 +115,7 @@ namespace Homework_4._7
                      {
                         string subLine = stringModified.ToString();
                         arrayDouble[row, column] = Convert.ToDouble(subLine);
-                        Console.Write(arrayDouble[row, column] + " ");
+                        //Console.Write(arrayDouble[row, column] + " ");
                         stringModified.Clear();
                         column++;
                      }
@@ -124,7 +124,7 @@ namespace Homework_4._7
                      {
                         string subLine = stringModified.ToString();
                         arrayDouble[row, column] = Convert.ToDouble(subLine);
-                        Console.Write(arrayDouble[row, column]);
+                        //Console.Write(arrayDouble[row, column]);
                         stringModified.Clear();
                         column++;
                      }
@@ -135,11 +135,10 @@ namespace Homework_4._7
                   countCharacter = 0;
                }
 
-               Console.WriteLine();
+               //Console.WriteLine();
                column = 0;
                row++;
             }
-            Console.ResetColor();
          }
 
          return arrayDouble;
