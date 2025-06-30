@@ -106,6 +106,9 @@ namespace Homework_4._7
             }
          }
 
+         double result = CalculatingValue(minOne, minTwo, minThree);
+         Console.WriteLine(result);
+
          // Сравниваем значения double используя метод CompareTo(Double) 
          //if (minOne.CompareTo(-1.0) == 0)
          //{
@@ -118,7 +121,7 @@ namespace Homework_4._7
          Console.ReadKey();
       }
 
-      public double CalculatingValue(double minOne, double minTwo, double minThree)
+      public static double CalculatingValue(double minOne, double minTwo, double minThree)
       {
          return minOne * minTwo - minThree;
       }
