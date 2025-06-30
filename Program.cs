@@ -43,26 +43,26 @@ namespace Homework_4._7
             File.Create(pathFour).Close();
          }
 
-         //double minOne = -1.0;
-         //double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
-         //if (sourceOne.GetLength(0) == 0)
-         //{
-         //   Console.WriteLine("Файл пуст");
-         //}
-         //else
-         //{
-         //   double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
-         //   bool fl = VariousMethods.SearchingPositiv(searchOne);
-         //   if (!fl)
-         //   {
-         //      minOne = VariousMethods.SearchingMinPositiv(searchOne);
-         //      Console.WriteLine(minOne);
-         //   }
-         //   else
-         //   {
-         //      Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameOne);
-         //   }
-         //}
+         double minOne = -1.0;
+         double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameOne);
+         if (sourceOne.GetLength(0) == 0)
+         {
+            Console.WriteLine("Файл пуст");
+         }
+         else
+         {
+            double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
+            bool flOne = VariousMethods.SearchingPositiv(searchOne);
+            if (!flOne)
+            {
+               minOne = VariousMethods.SearchingMinPositiv(searchOne);
+               Console.WriteLine(minOne);
+            }
+            else
+            {
+               Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameOne);
+            }
+         }
 
          double minTwo = -1.0;
          double[,] sourceTwo = VariousMethods.VvodArray(pathTwo, nameTwo);
