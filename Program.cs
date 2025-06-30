@@ -86,7 +86,7 @@ namespace Homework_4._7
          }
 
          // Сравниваем значения double используя метод CompareTo(Double) 
-         if (minTwo.CompareTo(-1.0) == 0)
+         if (minOne.CompareTo(-1.0) == 0)
          {
 
          }
