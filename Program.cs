@@ -113,7 +113,6 @@ namespace Homework_4._7
          Console.ReadKey();
       }
 
-
       double CalculatingValue(double minOne, double minTwo, double minThree)
       {
          return minOne * minTwo - minThree;
