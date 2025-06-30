@@ -207,6 +207,10 @@ namespace Homework_4._7
             i++;
          }
 
+         Console.WriteLine("Минимальное значение среди положительных элементов двумерного массива: {0}", min);
+         Console.WriteLine("Результат: {0:f2}", min);
+         Console.WriteLine("Результат: {0:f}", min);
+
          return min;
       }
 
