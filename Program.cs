@@ -86,10 +86,10 @@ namespace Homework_4._7
          }
 
          // Сравниваем значения double используя метод CompareTo(Double) 
-         if (minOne.CompareTo(-1.0) == 0)
-         {
+         //if (minOne.CompareTo(-1.0) == 0)
+         //{
 
-         }
+         //}
 
          //string[] stringArray = VariousMethods.VivodStringArray(maxOne);
          //VariousMethods.FileWriteString(stringArray);
