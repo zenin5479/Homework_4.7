@@ -39,7 +39,6 @@ namespace Homework_4._7
          }
          else
          {
-            //Console.WriteLine("Файл существует. Очищаем");
             // Очищаем содержимое файла
             File.Create(pathFour).Close();
          }
