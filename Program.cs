@@ -80,7 +80,6 @@ namespace Homework_4._7
             else
             {
                minTwo = VariousMethods.SearchingMinPositiv(searchTwo, nameTwo);
-               //Console.WriteLine(minTwo);
             }
          }
 
