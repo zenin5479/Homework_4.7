@@ -60,7 +60,6 @@ namespace Homework_4._7
             else
             {
                minOne = VariousMethods.SearchingMinPositiv(searchOne, nameOne);
-               //Console.WriteLine(minOne);
             }
          }
 
