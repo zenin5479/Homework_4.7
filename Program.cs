@@ -83,8 +83,7 @@ namespace Homework_4._7
             }
          }
 
-         //double minThree;
-         //minThree = -1.0;
+         double minThree = -1.0;
          double[,] sourceThree = VariousMethods.VvodArray(pathThree);
          if (sourceThree.GetLength(0) == 0)
          {
@@ -100,7 +99,7 @@ namespace Homework_4._7
             }
             else
             {
-               double minThree = VariousMethods.SearchingMinPositiv(searchThree, nameThree);
+               minThree = VariousMethods.SearchingMinPositiv(searchThree, nameThree);
             }
          }
 
