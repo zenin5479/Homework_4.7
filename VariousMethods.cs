@@ -40,6 +40,7 @@ namespace Homework_4._7
          return m;
       }
 
+      // Добавить название файла
       public static double[,] VvodArray(string path)
       {
          // Двумерный массив вещественных чисел
@@ -239,11 +240,12 @@ namespace Homework_4._7
          return stringArray;
       }
 
+      // Добавить путь к файлу
       public static void FileWriteString(string[] stringArray)
       {
          // Запись массива строк в файл
          Console.WriteLine("Запись массива строк в файл");
-         string filePath = AppContext.BaseDirectory + "b.txt";
+         string filePath = AppContext.BaseDirectory + "finish.txt";
          File.WriteAllLines(filePath, stringArray);
       }
 
