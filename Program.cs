@@ -43,7 +43,7 @@ namespace Homework_4._7
             File.Create(pathFour).Close();
          }
 
-         double minOne;
+         double minOne = -1;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne);
          if (sourceOne.GetLength(0) == 0)
          {
