@@ -100,7 +100,6 @@ namespace Homework_4._7
             else
             {
                minThree = VariousMethods.SearchingMinPositiv(searchThree, nameThree);
-               //Console.WriteLine(minThree);
             }
          }
 
