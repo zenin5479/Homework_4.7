@@ -63,7 +63,7 @@ namespace Homework_4._7
             }
          }
 
-         double minTwo = -1.0; //
+         double minTwo = -1.0;
          double[,] sourceTwo = VariousMethods.VvodArray(pathTwo);
          if (sourceTwo.GetLength(0) == 0)
          {
