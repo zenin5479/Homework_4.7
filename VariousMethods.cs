@@ -219,6 +219,7 @@ namespace Homework_4._7
          return minOne * minTwo - minThree;
       }
 
+      // Добавить метод: вход строка,  выход - массив строк.
       public static string[] VivodStringArray(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
