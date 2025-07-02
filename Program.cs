@@ -20,6 +20,10 @@ namespace Homework_4._7
          string nameOne = "A";
          string nameTwo = "B";
          string nameThree = "C";
+         string nameFileOne = "a.txt";
+         string nameFileTwo = "b.txt";
+         string nameFileThree = "c.txt";
+         string nameFileFour = "finish.txt";
 
          int rowOne = VariousMethods.SizeRow(nameOne);
          int columnOne = VariousMethods.SizeColumn(nameOne);
@@ -28,10 +32,9 @@ namespace Homework_4._7
          int rowThree = VariousMethods.SizeRow(nameThree);
          int columnThree = VariousMethods.SizeColumn(nameThree);
 
-         string nameFileOne = "a.txt";
+
          string pathOne = Path.GetFullPath(nameFileOne);
 
-         string nameFileTwo = "a.txt";
 
 
          string pathTwo = Path.GetFullPath("b.txt");
