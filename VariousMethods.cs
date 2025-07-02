@@ -246,11 +246,11 @@ namespace Homework_4._7
       }
 
       // Добавить путь к файлу
-      public static void FileWriteString(string[] stringArray)
+      public static void FileWriteString(string[] stringArray, string nameFile)
       {
          // Запись массива строк в файл
-         Console.WriteLine("Запись массива строк в файл");
-         string filePath = AppContext.BaseDirectory + "finish.txt";
+         Console.WriteLine("Запись массива строк в файл {0}", nameFile);
+         string filePath = AppContext.BaseDirectory + nameFile;
          File.WriteAllLines(filePath, stringArray);
       }
 

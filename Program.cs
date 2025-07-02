@@ -115,7 +115,7 @@ namespace Homework_4._7
          //Console.WriteLine("Результат Amin * Bmin – Cmin: {0:f}", result);
 
          string[] stringArray = VariousMethods.VivodStringArray(new[] { result });
-         VariousMethods.FileWriteString(stringArray);
+         VariousMethods.FileWriteString(stringArray, nameFileFour);
 
          Console.ReadKey();
       }
