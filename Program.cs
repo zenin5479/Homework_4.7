@@ -24,6 +24,22 @@ namespace Homework_4._7
          string nameFileTwo = "b.txt";
          string nameFileThree = "c.txt";
          string nameFileFour = "finish.txt";
+         string pathOne = Path.GetFullPath(nameFileOne);
+
+string pathTwo = Path.GetFullPath(nameFileTwo);
+         string pathThree = Path.GetFullPath(nameFileThree);
+         string pathFour = Path.GetFullPath(nameFileFour);
+         if (!File.Exists(pathFour))
+         {
+            Console.WriteLine("Файл {0} не существует. Создаем", nameFileFour );
+            File.Create(pathFour);
+         }
+         else
+         {
+            // Очищаем содержимое файла
+            Console.WriteLine("Очищаем содержимое файла {0}", nameFileFour);
+            File.Create(pathFour).Close();
+         }
 
          int rowOne = VariousMethods.SizeRow(nameOne);
          int columnOne = VariousMethods.SizeColumn(nameOne);
@@ -33,23 +49,11 @@ namespace Homework_4._7
          int columnThree = VariousMethods.SizeColumn(nameThree);
 
 
-         string pathOne = Path.GetFullPath(nameFileOne);
 
 
 
-         string pathTwo = Path.GetFullPath("b.txt");
-         string pathThree = Path.GetFullPath("c.txt");
-         string pathFour = Path.GetFullPath("finish.txt");
-         if (!File.Exists(pathFour))
-         {
-            Console.WriteLine("Файл не существует");
-            File.Create(pathFour);
-         }
-         else
-         {
-            // Очищаем содержимое файла
-            File.Create(pathFour).Close();
-         }
+
+         
 
          double minOne = -1;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne);
