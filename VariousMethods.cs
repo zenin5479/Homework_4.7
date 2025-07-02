@@ -214,6 +214,11 @@ namespace Homework_4._7
          return min;
       }
 
+      public static double CalculatingValue(double minOne, double minTwo, double minThree)
+      {
+         return minOne * minTwo - minThree;
+      }
+
       public static string[] VivodStringArray(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
