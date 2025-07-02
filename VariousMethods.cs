@@ -40,7 +40,6 @@ namespace Homework_4._7
          return m;
       }
 
-      // Добавить название файла
       public static double[,] VvodArray(string path, string nameFile)
       {
          // Двумерный массив вещественных чисел
@@ -50,7 +49,7 @@ namespace Homework_4._7
          if (allLines == null || allLines.Length == 0)
          {
             Console.WriteLine("Ошибка содержимого файла для чтения {0}", nameFile);
-            Console.WriteLine("Ошибка содержимого файла для чтения {0}. Файл пуст", nameFile);
+            //Console.WriteLine("Ошибка содержимого файла для чтения {0}. Файл пуст", nameFile);
          }
          else
          {
