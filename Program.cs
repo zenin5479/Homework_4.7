@@ -53,7 +53,7 @@ namespace Homework_4._7
          double[,] sourceOne = VariousMethods.VvodArray(pathOne);
          if (sourceOne.GetLength(0) == 0)
          {
-            Console.WriteLine("Файл пуст");
+            Console.WriteLine("Файл {0} пуст", nameFileOne);
          }
          else
          {
