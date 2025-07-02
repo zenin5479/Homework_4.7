@@ -36,18 +36,7 @@ namespace Homework_4._7
          string pathOne = Path.GetFullPath(nameFileOne);
          string pathTwo = Path.GetFullPath(nameFileTwo);
          string pathThree = Path.GetFullPath(nameFileThree);
-         string pathFour = Path.GetFullPath(nameFileFour);
-         if (!File.Exists(pathFour))
-         {
-            Console.WriteLine("Файл {0} не существует. Создаем новый", nameFileFour);
-            File.Create(pathFour);
-         }
-         else
-         {
-            // Очищаем содержимое файла
-            Console.WriteLine("Файл {0} содержит предыдущие результаты. Очищаем данные", nameFileFour);
-            File.Create(pathFour).Close();
-         }
+
 
          double minOne = -1;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameFileOne);
@@ -115,6 +104,20 @@ namespace Homework_4._7
          //Console.WriteLine("Результат Amin * Bmin – Cmin: {0:f}", result);
 
          string[] stringArray = VariousMethods.VivodStringArray(new[] { result });
+         
+         string pathFour = Path.GetFullPath(nameFileFour);
+         if (!File.Exists(pathFour))
+         {
+            Console.WriteLine("Файл {0} не существует. Создаем новый", nameFileFour);
+            File.Create(pathFour);
+         }
+         else
+         {
+            // Очищаем содержимое файла
+            Console.WriteLine("Файл {0} содержит предыдущие результаты. Очищаем данные", nameFileFour);
+            File.Create(pathFour).Close();
+         }
+
          VariousMethods.FileWriteString(stringArray, nameFileFour);
 
          Console.ReadKey();
