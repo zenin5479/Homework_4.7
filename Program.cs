@@ -26,8 +26,6 @@ namespace Homework_4._7
          string nameFileThree = "c.txt";
          string nameFileFour = "finish.txt";
 
-
-
          int rowOne = VariousMethods.SizeRow(nameOne);
          int columnOne = VariousMethods.SizeColumn(nameOne);
          int rowTwo = VariousMethods.SizeRow(nameTwo);
