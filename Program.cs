@@ -28,7 +28,9 @@ namespace Homework_4._7
          int rowThree = VariousMethods.SizeRow(nameThree);
          int columnThree = VariousMethods.SizeColumn(nameThree);
 
-         string pathOne = Path.GetFullPath("a.txt");
+         string nameFileOne = "a.txt";
+         string pathOne = Path.GetFullPath(nameFileOne);
+
          string pathTwo = Path.GetFullPath("b.txt");
          string pathThree = Path.GetFullPath("c.txt");
          string pathFour = Path.GetFullPath("finish.txt");
