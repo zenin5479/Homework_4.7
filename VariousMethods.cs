@@ -245,7 +245,6 @@ namespace Homework_4._7
          return stringArray;
       }
 
-      // Добавить путь к файлу
       public static void FileWriteString(string[] stringArray, string nameFile)
       {
          // Запись массива строк в файл
