@@ -25,13 +25,12 @@ namespace Homework_4._7
          string nameFileThree = "c.txt";
          string nameFileFour = "finish.txt";
          string pathOne = Path.GetFullPath(nameFileOne);
-
-string pathTwo = Path.GetFullPath(nameFileTwo);
+         string pathTwo = Path.GetFullPath(nameFileTwo);
          string pathThree = Path.GetFullPath(nameFileThree);
          string pathFour = Path.GetFullPath(nameFileFour);
          if (!File.Exists(pathFour))
          {
-            Console.WriteLine("Файл {0} не существует. Создаем", nameFileFour );
+            Console.WriteLine("Файл {0} не существует. Создаем", nameFileFour);
             File.Create(pathFour);
          }
          else
@@ -53,7 +52,7 @@ string pathTwo = Path.GetFullPath(nameFileTwo);
 
 
 
-         
+
 
          double minOne = -1;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne);
