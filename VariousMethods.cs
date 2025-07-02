@@ -50,12 +50,7 @@ namespace Homework_4._7
          if (allLines == null || allLines.Length == 0)
          {
             Console.WriteLine("Ошибка содержимого файла для чтения {0}", nameFile);
-
-            Console.WriteLine("Ошибка содержимого файла для чтения {0}. Файл {0} пуст", nameFile);
-
-            Console.WriteLine("Файл {0} пуст", nameFileOne);
-
-            Console.WriteLine("Ошибка содержимого файла для чтения");
+            Console.WriteLine("Ошибка содержимого файла для чтения {0}. Файл пуст", nameFile);
          }
          else
          {
