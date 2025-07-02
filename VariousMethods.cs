@@ -41,7 +41,7 @@ namespace Homework_4._7
       }
 
       // Добавить название файла
-      public static double[,] VvodArray(string path)
+      public static double[,] VvodArray(string path, string nameFile)
       {
          // Двумерный массив вещественных чисел
          double[,] arrayDouble = { };
@@ -49,6 +49,8 @@ namespace Homework_4._7
          string[] allLines = File.ReadAllLines(path);
          if (allLines == null || allLines.Length == 0)
          {
+            Console.WriteLine("Ошибка содержимого файла для чтения {0} не существует. Создаем новый", nameFile);
+
             Console.WriteLine("Ошибка содержимого файла для чтения");
          }
          else
