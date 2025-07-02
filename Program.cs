@@ -31,6 +31,9 @@ namespace Homework_4._7
          string nameFileOne = "a.txt";
          string pathOne = Path.GetFullPath(nameFileOne);
 
+         string nameFileTwo = "a.txt";
+
+
          string pathTwo = Path.GetFullPath("b.txt");
          string pathThree = Path.GetFullPath("c.txt");
          string pathFour = Path.GetFullPath("finish.txt");
