@@ -26,6 +26,15 @@ namespace Homework_4._7
          string nameFileThree = "c.txt";
          string nameFileFour = "finish.txt";
 
+
+
+         int rowOne = VariousMethods.SizeRow(nameOne);
+         int columnOne = VariousMethods.SizeColumn(nameOne);
+         int rowTwo = VariousMethods.SizeRow(nameTwo);
+         int columnTwo = VariousMethods.SizeColumn(nameTwo);
+         int rowThree = VariousMethods.SizeRow(nameThree);
+         int columnThree = VariousMethods.SizeColumn(nameThree);
+
          string pathOne = Path.GetFullPath(nameFileOne);
          string pathTwo = Path.GetFullPath(nameFileTwo);
          string pathThree = Path.GetFullPath(nameFileThree);
@@ -41,15 +50,6 @@ namespace Homework_4._7
             Console.WriteLine("Очищаем содержимое файла {0}", nameFileFour);
             File.Create(pathFour).Close();
          }
-
-         int rowOne = VariousMethods.SizeRow(nameOne);
-         int columnOne = VariousMethods.SizeColumn(nameOne);
-         int rowTwo = VariousMethods.SizeRow(nameTwo);
-         int columnTwo = VariousMethods.SizeColumn(nameTwo);
-         int rowThree = VariousMethods.SizeRow(nameThree);
-         int columnThree = VariousMethods.SizeColumn(nameThree);
-
-
 
 
 
