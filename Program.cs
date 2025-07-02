@@ -113,11 +113,5 @@ namespace Homework_4._7
 
          Console.ReadKey();
       }
-
-      // Перенести метод в класс и библиотеку
-      public static double CalculatingValue(double minOne, double minTwo, double minThree)
-      {
-         return minOne * minTwo - minThree;
-      }
    }
 }
