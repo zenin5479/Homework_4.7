@@ -20,17 +20,19 @@ namespace Homework_4._7
          string nameOne = "A";
          string nameTwo = "B";
          string nameThree = "C";
+
          string nameFileOne = "a.txt";
          string nameFileTwo = "b.txt";
          string nameFileThree = "c.txt";
          string nameFileFour = "finish.txt";
+
          string pathOne = Path.GetFullPath(nameFileOne);
          string pathTwo = Path.GetFullPath(nameFileTwo);
          string pathThree = Path.GetFullPath(nameFileThree);
          string pathFour = Path.GetFullPath(nameFileFour);
          if (!File.Exists(pathFour))
          {
-            Console.WriteLine("Файл {0} не существует. Создаем", nameFileFour);
+            Console.WriteLine("Файл {0} не существует. Создаем новый", nameFileFour);
             File.Create(pathFour);
          }
          else
