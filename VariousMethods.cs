@@ -227,9 +227,7 @@ namespace Homework_4._7
          Console.WriteLine("Одномерный массив строк");
 
          double value = 1.23456;
-         string stringValue = Convert.ToString(value, CultureInfo.CurrentCulture);
-
-
+         string stringValue = Convert.ToString(value);
 
          StringBuilder stringModified = new StringBuilder();
          stringModified.Append(input);
