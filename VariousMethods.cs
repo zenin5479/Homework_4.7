@@ -225,15 +225,10 @@ namespace Homework_4._7
          // Конвертация double в одномерный массив строк string[] для записи в файл (в одну строку массива)
          Console.WriteLine("Одномерный массив строк");
          StringBuilder stringModified = new StringBuilder();
-
-
-
          stringModified.Append(input);
-
-
-
-         Console.WriteLine(stringModified);
-         string[] stringArray = { stringModified.ToString() };
+         string line = stringModified.ToString();
+         Console.WriteLine(line);
+         string[] stringArray = { line };
          return stringArray;
       }
 
