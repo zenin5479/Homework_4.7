@@ -218,13 +218,17 @@ namespace Homework_4._7
       {
          return minOne * minTwo - minThree;
       }
+      
       // Добавить метод: вход строка,  выход - массив строк.
       public static string[] VivodString(double input)
       {
-         // Объединение одномерного массива максимальных значений строк double[]
-         // в одномерный массив строк string[] для записи в файл (в одну строку массива)
+         // Конвертация double в одномерный массив строк string[] для записи в файл (в одну строку массива)
          Console.WriteLine("Одномерный массив строк");
          StringBuilder stringModified = new StringBuilder();
+
+         Console.WriteLine("Введите количество строк массива {0}:", nameArray);
+         int.TryParse(Console.ReadLine(), out n);
+         n = Convert.ToInt32(Console.ReadLine());
          int row = 0;
          while (row < input.Length)
          {
@@ -244,8 +248,6 @@ namespace Homework_4._7
          string[] stringArray = { stringModified.ToString() };
          return stringArray;
       }
-
-
 
       public static string[] VivodStringArray(double[] inputArray)
       {
