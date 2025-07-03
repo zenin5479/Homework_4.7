@@ -103,7 +103,7 @@ namespace Homework_4._7
          //Console.WriteLine("Результат Amin * Bmin – Cmin: {0:f2}", result);
          //Console.WriteLine("Результат Amin * Bmin – Cmin: {0:f}", result);
 
-         string[] stringArray = VariousMethods.VivodStringArray(new[] { result });
+         string[] stringArray = VariousMethods.VivodString(result );
 
          string pathFour = Path.GetFullPath(nameFileFour);
          if (!File.Exists(pathFour))
