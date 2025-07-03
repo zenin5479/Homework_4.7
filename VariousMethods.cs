@@ -226,8 +226,7 @@ namespace Homework_4._7
          // Конвертация double в одномерный массив строк string[] для записи в файл (в одну строку массива)
          Console.WriteLine("Одномерный массив строк");
 
-         double value = 1.23456;
-         string stringValue = Convert.ToString(value);
+         
 
          StringBuilder stringModified = new StringBuilder();
          stringModified.Append(input);
