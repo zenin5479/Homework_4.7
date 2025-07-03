@@ -218,7 +218,7 @@ namespace Homework_4._7
       {
          return minOne * minTwo - minThree;
       }
-      
+
       // Добавить метод: вход строка,  выход - массив строк.
       public static string[] VivodString(double input)
       {
@@ -226,25 +226,11 @@ namespace Homework_4._7
          Console.WriteLine("Одномерный массив строк");
          StringBuilder stringModified = new StringBuilder();
 
-         double number = -3.541;
-         // Displays -3.541.
-         Console.WriteLine(number.ToString());
 
-         string n = Convert.ToString(input);
-         int row = 0;
-         while (row < input.Length)
-         {
-            if (row != input.Length - 1)
-            {
-               stringModified.Append(input[row] + " ");
-            }
-            else
-            {
-               stringModified.Append(input[row]);
-            }
 
-            row++;
-         }
+         stringModified.Append(input);
+
+
 
          Console.WriteLine(stringModified);
          string[] stringArray = { stringModified.ToString() };
