@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Globalization;
 using System.IO;
 using System.Text;
 
@@ -220,7 +219,7 @@ namespace Homework_4._7
          return minOne * minTwo - minThree;
       }
 
-      // Добавить метод: вход строка,  выход - массив строк.
+      // Добавить метод: вход double, выход - массив строк +
       public static string[] VivodString(double input)
       {
          // Конвертация double в одномерный массив строк string[] для записи в файл (в одну строку массива)
