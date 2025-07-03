@@ -226,9 +226,11 @@ namespace Homework_4._7
          Console.WriteLine("Одномерный массив строк");
          StringBuilder stringModified = new StringBuilder();
 
-         Console.WriteLine("Введите количество строк массива {0}:", nameArray);
-         int.TryParse(Console.ReadLine(), out n);
-         n = Convert.ToInt32(Console.ReadLine());
+         double number = -3.541;
+         // Displays -3.541.
+         Console.WriteLine(number.ToString());
+
+         string n = Convert.ToString(input);
          int row = 0;
          while (row < input.Length)
          {
