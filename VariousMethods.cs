@@ -218,8 +218,35 @@ namespace Homework_4._7
       {
          return minOne * minTwo - minThree;
       }
-
       // Добавить метод: вход строка,  выход - массив строк.
+      public static string[] VivodString(double input)
+      {
+         // Объединение одномерного массива максимальных значений строк double[]
+         // в одномерный массив строк string[] для записи в файл (в одну строку массива)
+         Console.WriteLine("Одномерный массив строк");
+         StringBuilder stringModified = new StringBuilder();
+         int row = 0;
+         while (row < input.Length)
+         {
+            if (row != input.Length - 1)
+            {
+               stringModified.Append(input[row] + " ");
+            }
+            else
+            {
+               stringModified.Append(input[row]);
+            }
+
+            row++;
+         }
+
+         Console.WriteLine(stringModified);
+         string[] stringArray = { stringModified.ToString() };
+         return stringArray;
+      }
+
+
+
       public static string[] VivodStringArray(double[] inputArray)
       {
          // Объединение одномерного массива максимальных значений строк double[]
