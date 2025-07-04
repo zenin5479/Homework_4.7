@@ -230,33 +230,7 @@ namespace Homework_4._7
          string[] stringArray = { line };
          return stringArray;
       }
-
-      public static string[] VivodStringArray(double[] inputArray)
-      {
-         // Объединение одномерного массива максимальных значений строк double[]
-         // в одномерный массив строк string[] для записи в файл (в одну строку массива)
-         Console.WriteLine("Одномерный массив строк");
-         StringBuilder stringModified = new StringBuilder();
-         int row = 0;
-         while (row < inputArray.Length)
-         {
-            if (row != inputArray.Length - 1)
-            {
-               stringModified.Append(inputArray[row] + " ");
-            }
-            else
-            {
-               stringModified.Append(inputArray[row]);
-            }
-
-            row++;
-         }
-
-         Console.WriteLine(stringModified);
-         string[] stringArray = { stringModified.ToString() };
-         return stringArray;
-      }
-
+      
       public static void FileWriteString(string[] stringArray, string nameFile)
       {
          // Запись массива строк в файл
