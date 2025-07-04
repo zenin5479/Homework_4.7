@@ -37,7 +37,7 @@ namespace Homework_4._7
          string pathTwo = Path.GetFullPath(nameFileTwo);
          string pathThree = Path.GetFullPath(nameFileThree);
 
-         double minOne = -1;
+         double minOne = 0;
          double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameFileOne);
          if (sourceOne.GetLength(0) == 0)
          {
