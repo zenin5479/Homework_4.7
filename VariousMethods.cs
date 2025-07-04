@@ -239,27 +239,6 @@ namespace Homework_4._7
          File.WriteAllLines(filePath, stringArray);
       }
 
-      public static string[] VivodArrayString(double[] inputArray)
-      {
-         // Объединение одномерного массива максимальных значений строк double[]
-         // в одномерный массив строк string[] для записи в файл
-         Console.WriteLine("Одномерный массив строк");
-         StringBuilder stringModified = new StringBuilder();
-         string[] arrayString = new string[inputArray.Length];
-         int row = 0;
-         while (row < inputArray.Length)
-         {
-            stringModified.Append(inputArray[row]);
-            string subLine = stringModified.ToString();
-            arrayString[row] = subLine;
-            Console.WriteLine(subLine);
-            stringModified.Clear();
-            row++;
-         }
-
-         return arrayString;
-      }
-
       public static void FileWriteArray(string[] arrayString, string nameFile)
       {
          // Запись массива строк в файл
