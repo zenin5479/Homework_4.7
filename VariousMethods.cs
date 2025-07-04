@@ -238,13 +238,5 @@ namespace Homework_4._7
          string filePath = AppContext.BaseDirectory + nameFile;
          File.WriteAllLines(filePath, stringArray);
       }
-
-      public static void FileWriteArray(string[] arrayString, string nameFile)
-      {
-         // Запись массива строк в файл
-         Console.WriteLine("Запись массива строк в файл {0}", nameFile);
-         string filePath = AppContext.BaseDirectory + nameFile;
-         File.WriteAllLines(filePath, arrayString);
-      }
    }
 }
