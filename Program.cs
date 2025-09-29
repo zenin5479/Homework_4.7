@@ -1,6 +1,5 @@
 ﻿using System;
 using System.IO;
-using LibraryFor2DArray;
 
 // Разработать программу для обработки двух или трёх двумерных массивов разного размера с использованием подпрограмм
 // При разработке подпрограмм предусмотреть случай, когда искомых элементов нет
@@ -27,83 +26,92 @@ namespace Homework_4._7
          string nameFileThree = "c.txt";
          string nameFileFour = "finish.txt";
 
-         int rowOne = VariousMethods.SizeRow(nameOne);
-         int columnOne = VariousMethods.SizeColumn(nameOne);
-         int rowTwo = VariousMethods.SizeRow(nameTwo);
-         int columnTwo = VariousMethods.SizeColumn(nameTwo);
-         int rowThree = VariousMethods.SizeRow(nameThree);
-         int columnThree = VariousMethods.SizeColumn(nameThree);
+         int rowOne = MethodsForArray.SizeRow(nameOne);
+         int columnOne = MethodsForArray.SizeColumn(nameOne);
+         int rowTwo = MethodsForArray.SizeRow(nameTwo);
+         int columnTwo = MethodsForArray.SizeColumn(nameTwo);
+         int rowThree = MethodsForArray.SizeRow(nameThree);
+         int columnThree = MethodsForArray.SizeColumn(nameThree);
 
          string pathOne = Path.GetFullPath(nameFileOne);
          string pathTwo = Path.GetFullPath(nameFileTwo);
          string pathThree = Path.GetFullPath(nameFileThree);
 
          double minOne = 0;
-         double[,] sourceOne = VariousMethods.VvodArray(pathOne, nameFileOne);
+         double[,] sourceOne = MethodsForArray.VvodArray(pathOne, nameFileOne);
          if (sourceOne.GetLength(0) == 0)
          {
             Console.WriteLine("Файл {0} пуст", nameFileOne);
          }
          else
          {
-            double[,] searchOne = VariousMethods.InputArray(sourceOne, rowOne, columnOne, nameOne);
-            bool flOne = VariousMethods.SearchingPositiv(searchOne);
+                  
+         }
+         {
+            double[,] searchOne = MethodsForArray.InputArray(sourceOne, rowOne, columnOne, nameOne);
+            bool flOne = MethodsForArray.SearchingPositiv(searchOne);
             if (flOne)
             {
                Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameOne);
             }
             else
             {
-               minOne = VariousMethods.SearchingMinPositiv(searchOne, nameOne);
+               minOne = MethodsForArray.SearchingMinPositiv(searchOne, nameOne);
             }
          }
 
          double minTwo = 0;
-         double[,] sourceTwo = VariousMethods.VvodArray(pathTwo, nameFileTwo);
+         double[,] sourceTwo = MethodsForArray.VvodArray(pathTwo, nameFileTwo);
          if (sourceTwo.GetLength(0) == 0)
          {
             Console.WriteLine("Файл {0} пуст", nameFileTwo);
          }
          else
          {
-            double[,] searchTwo = VariousMethods.InputArray(sourceTwo, rowTwo, columnTwo, nameTwo);
-            bool flTwo = VariousMethods.SearchingPositiv(searchTwo);
+                                       
+         }
+         {
+            double[,] searchTwo = MethodsForArray.InputArray(sourceTwo, rowTwo, columnTwo, nameTwo);
+            bool flTwo = MethodsForArray.SearchingPositiv(searchTwo);
             if (flTwo)
             {
                Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameTwo);
             }
             else
             {
-               minTwo = VariousMethods.SearchingMinPositiv(searchTwo, nameTwo);
+               minTwo = MethodsForArray.SearchingMinPositiv(searchTwo, nameTwo);
             }
          }
 
          double minThree = 0;
-         double[,] sourceThree = VariousMethods.VvodArray(pathThree, nameFileThree);
+         double[,] sourceThree = MethodsForArray.VvodArray(pathThree, nameFileThree);
          if (sourceThree.GetLength(0) == 0)
          {
             Console.WriteLine("Файл {0} пуст", nameFileThree);
          }
          else
          {
-            double[,] searchThree = VariousMethods.InputArray(sourceThree, rowThree, columnThree, nameThree);
-            bool flThree = VariousMethods.SearchingPositiv(searchThree);
+                              
+         }
+         {
+            double[,] searchThree = MethodsForArray.InputArray(sourceThree, rowThree, columnThree, nameThree);
+            bool flThree = MethodsForArray.SearchingPositiv(searchThree);
             if (flThree)
             {
                Console.WriteLine("В двумерном массиве {0} нет искомых положительных элементов", nameThree);
             }
             else
             {
-               minThree = VariousMethods.SearchingMinPositiv(searchThree, nameThree);
+               minThree = MethodsForArray.SearchingMinPositiv(searchThree, nameThree);
             }
          }
 
-         double result = VariousMethods.CalculatingValue(minOne, minTwo, minThree);
+         double result = MethodsForArray.CalculatingValue(minOne, minTwo, minThree);
          Console.WriteLine("Результат Amin * Bmin – Cmin: {0}", result);
          //Console.WriteLine("Результат Amin * Bmin – Cmin: {0:f2}", result);
          //Console.WriteLine("Результат Amin * Bmin – Cmin: {0:f}", result);
 
-         string[] stringArray = VariousMethods.VivodString(result);
+         string[] stringArray = MethodsForArray.VivodString(result);
          string pathFour = Path.GetFullPath(nameFileFour);
          if (!File.Exists(pathFour))
          {
@@ -117,7 +125,7 @@ namespace Homework_4._7
             File.Create(pathFour).Close();
          }
 
-         VariousMethods.FileWriteString(stringArray, nameFileFour);
+         MethodsForArray.FileWriteString(stringArray, nameFileFour);
          Console.ReadKey();
       }
    }
