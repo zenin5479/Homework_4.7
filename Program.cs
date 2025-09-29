@@ -45,9 +45,6 @@ namespace Homework_4._7
          }
          else
          {
-                  
-         }
-         {
             double[,] searchOne = MethodsForArray.InputArray(sourceOne, rowOne, columnOne, nameOne);
             bool flOne = MethodsForArray.SearchingPositiv(searchOne);
             if (flOne)
@@ -68,9 +65,6 @@ namespace Homework_4._7
          }
          else
          {
-                                       
-         }
-         {
             double[,] searchTwo = MethodsForArray.InputArray(sourceTwo, rowTwo, columnTwo, nameTwo);
             bool flTwo = MethodsForArray.SearchingPositiv(searchTwo);
             if (flTwo)
@@ -90,9 +84,6 @@ namespace Homework_4._7
             Console.WriteLine("Файл {0} пуст", nameFileThree);
          }
          else
-         {
-                              
-         }
          {
             double[,] searchThree = MethodsForArray.InputArray(sourceThree, rowThree, columnThree, nameThree);
             bool flThree = MethodsForArray.SearchingPositiv(searchThree);

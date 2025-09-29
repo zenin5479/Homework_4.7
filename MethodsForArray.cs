@@ -230,7 +230,7 @@ namespace Homework_4._7
          string[] stringArray = { line };
          return stringArray;
       }
-      
+
       public static void FileWriteString(string[] stringArray, string nameFile)
       {
          // Запись массива строк в файл
